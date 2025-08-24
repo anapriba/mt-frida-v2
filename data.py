@@ -118,6 +118,7 @@ def generate_correction_data(original, issues):
       if issues_row[1] == 'True':
          new_row.append(issues_row[4])
          new_row.append(issues_row[2])
+         print(new_row)
       
       suggestions.append(new_row)
 
@@ -137,14 +138,13 @@ def correct_issues(original, issues):
         final.append(new_data_row)
     return final
 
-train_final = correct_issues(train_data, train_issues)
-test_final = correct_issues(test_data, test_issues)
-eval_final = correct_issues(eval_data, eval_issues)
-
 train_suggestions = generate_correction_data(train_data, train_issues)
 test_suggestions = generate_correction_data(test_data, test_issues)
 eval_suggestions = generate_correction_data(eval_data, eval_issues)
 
+train_final = correct_issues(train_data, train_issues)
+test_final = correct_issues(test_data, test_issues)
+eval_final = correct_issues(eval_data, eval_issues)
 
 def write_tsv(data, filename):
     with open(filename, 'w', newline='', encoding='utf-8') as file:
