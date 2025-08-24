@@ -1,0 +1,32 @@
+----- Running code ------ 
+Starting epoch 1/10
+{'train_runtime': 5566.3301, 'train_samples_per_second': 1.232, 'train_steps_per_second': 0.077, 'train_loss': 0.45478258822069856, 'epoch': 1.0}
+Metrics after epoch 1: {'eval_loss': 1.1123543977737427, 'eval_precision': 0.45990113735783034, 'eval_recall': 0.55249343832021, 'eval_f1': 0.40385126557132495, 'eval_runtime': 75.8921, 'eval_samples_per_second': 10.041, 'eval_steps_per_second': 1.265, 'epoch': 1.0}
+Starting epoch 2/10
+{'train_runtime': 5538.5556, 'train_samples_per_second': 1.238, 'train_steps_per_second': 0.077, 'train_loss': 0.39734416686015805, 'epoch': 1.0}
+Metrics after epoch 2: {'eval_loss': 1.0110236406326294, 'eval_precision': 0.7250041358917035, 'eval_recall': 0.5813648293963255, 'eval_f1': 0.46138583913472225, 'eval_runtime': 76.7136, 'eval_samples_per_second': 9.933, 'eval_steps_per_second': 1.251, 'epoch': 1.0}
+Starting epoch 3/10
+{'train_runtime': 5529.9022, 'train_samples_per_second': 1.24, 'train_steps_per_second': 0.078, 'train_loss': 0.3533375346577251, 'epoch': 1.0}
+Metrics after epoch 3: {'eval_loss': 1.0712969303131104, 'eval_precision': 0.7592750808080749, 'eval_recall': 0.6325459317585301, 'eval_f1': 0.5548065835215542, 'eval_runtime': 76.6952, 'eval_samples_per_second': 9.935, 'eval_steps_per_second': 1.252, 'epoch': 1.0}
+Starting epoch 4/10
+{'train_runtime': 5534.5155, 'train_samples_per_second': 1.239, 'train_steps_per_second': 0.078, 'train_loss': 0.30976127855705493, 'epoch': 1.0}
+Metrics after epoch 4: {'eval_loss': 1.185600996017456, 'eval_precision': 0.7639266722865315, 'eval_recall': 0.6627296587926509, 'eval_f1': 0.6077860304538909, 'eval_runtime': 76.291, 'eval_samples_per_second': 9.988, 'eval_steps_per_second': 1.258, 'epoch': 1.0}
+Starting epoch 5/10
+{'train_runtime': 5533.1858, 'train_samples_per_second': 1.24, 'train_steps_per_second': 0.078, 'train_loss': 0.26039922042882246, 'epoch': 1.0}
+Metrics after epoch 5: {'eval_loss': 1.4278887510299683, 'eval_precision': 0.735901412355407, 'eval_recall': 0.6614173228346457, 'eval_f1': 0.6133044696616087, 'eval_runtime': 77.3802, 'eval_samples_per_second': 9.847, 'eval_steps_per_second': 1.241, 'epoch': 1.0}
+Starting epoch 6/10
+{'train_runtime': 5532.6394, 'train_samples_per_second': 1.24, 'train_steps_per_second': 0.078, 'train_loss': 0.23867038468936663, 'epoch': 1.0}
+Metrics after epoch 6: {'eval_loss': 1.7190598249435425, 'eval_precision': 0.7229233540929334, 'eval_recall': 0.6548556430446194, 'eval_f1': 0.6047287497646964, 'eval_runtime': 77.5729, 'eval_samples_per_second': 9.823, 'eval_steps_per_second': 1.238, 'epoch': 1.0}
+Starting epoch 7/10
+{'train_runtime': 5541.7247, 'train_samples_per_second': 1.238, 'train_steps_per_second': 0.077, 'train_loss': 0.21947938078766935, 'epoch': 1.0}
+Metrics after epoch 7: {'eval_loss': 1.949472188949585, 'eval_precision': 0.7035189698155404, 'eval_recall': 0.6535433070866141, 'eval_f1': 0.606306136862149, 'eval_runtime': 77.4099, 'eval_samples_per_second': 9.844, 'eval_steps_per_second': 1.24, 'epoch': 1.0}
+Starting epoch 8/10
+{'train_runtime': 5547.0233, 'train_samples_per_second': 1.237, 'train_steps_per_second': 0.077, 'train_loss': 0.20799395865771597, 'epoch': 1.0}
+Metrics after epoch 8: {'eval_loss': 2.177671194076538, 'eval_precision': 0.7091935122692997, 'eval_recall': 0.652230971128609, 'eval_f1': 0.6026604083833127, 'eval_runtime': 77.7251, 'eval_samples_per_second': 9.804, 'eval_steps_per_second': 1.235, 'epoch': 1.0}
+Starting epoch 9/10
+{'train_runtime': 5541.45, 'train_samples_per_second': 1.238, 'train_steps_per_second': 0.077, 'train_loss': 0.1853574205945422, 'epoch': 1.0}
+Metrics after epoch 9: {'eval_loss': 2.2963380813598633, 'eval_precision': 0.6839915359417281, 'eval_recall': 0.6351706036745407, 'eval_f1': 0.5799722157016195, 'eval_runtime': 76.1434, 'eval_samples_per_second': 10.007, 'eval_steps_per_second': 1.261, 'epoch': 1.0}
+Starting epoch 10/10
+{'train_runtime': 5532.2701, 'train_samples_per_second': 1.24, 'train_steps_per_second': 0.078, 'train_loss': 0.1687507006949756, 'epoch': 1.0}
+Metrics after epoch 10: {'eval_loss': 2.5078392028808594, 'eval_precision': 0.6876292928342921, 'eval_recall': 0.6391076115485564, 'eval_f1': 0.5873803128801077, 'eval_runtime': 76.1023, 'eval_samples_per_second': 10.013, 'eval_steps_per_second': 1.261, 'epoch': 1.0}
+Test metrics: {'eval_loss': 2.3323886394500732, 'eval_precision': 0.649102259965973, 'eval_recall': 0.6440944881889764, 'eval_f1': 0.5895064889221316, 'eval_runtime': 190.0823, 'eval_samples_per_second': 10.022, 'eval_steps_per_second': 1.257, 'epoch': 1.0}

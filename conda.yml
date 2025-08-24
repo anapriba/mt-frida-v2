@@ -1,0 +1,26 @@
+channels:
+  - pytorch
+  - nvidia
+  - huggingface
+  - conda-forge
+dependencies:
+  - pytorch ==2.7
+  - transformers ==4.2
+  - torchvision 
+  - torchaudio 
+  - pytorch-cuda
+  - evaluate
+  - pandas
+  - datasets
+  - accelerate
+  - scikit-learn
+  - libmagic
+  - tensorboard
+  - matplotlib
+  - bitsandbytes
+  - cuda-nvcc
+  - cudatoolkit
+  - trl
+  - sentencepiece
+  - cleanlab
+

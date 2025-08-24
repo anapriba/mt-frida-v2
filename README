@@ -1,0 +1,27 @@
+# MT
+
+```
+
+# 1. Build a container
+
+apptainer build mt.sif MT.def
+
+
+# 2. Access shell is there a better way
+
+singularity shell mt.sif
+
+
+# 3. Perform installation of models. Keep the code in python
+
+
+# 4. cp or mv sif file to working folder
+
+cp mt.sif /lustre/home/apribani/projekt/mt
+
+
+# 5. execute the task.
+
+qsub mt-task.sh
+
+#PBS -l select=1:ncpus=16:mem=64GB:ngpus=1
