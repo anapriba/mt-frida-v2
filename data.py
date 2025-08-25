@@ -138,6 +138,20 @@ def correct_issues(original, issues):
         final.append(new_data_row)
     return final
 
+def apply_marked_suggestions(suggestions):
+    final = []
+    final.append(['text', 'label']) # append header
+    for i in range(len(suggestions)):
+        row = suggestions[i]
+
+        if row[1] == 'True':
+            original_row[1] = issues_row[4] # if issue was detected, change the label value
+   
+        new_data_row = original_row
+        final.append(new_data_row)
+    return final
+
+
 train_suggestions = generate_correction_data(train_data, train_issues)
 test_suggestions = generate_correction_data(test_data, test_issues)
 eval_suggestions = generate_correction_data(eval_data, eval_issues)
@@ -150,14 +164,6 @@ def write_tsv(data, filename):
     with open(filename, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file, delimiter='\t')
         writer.writerows(data)
-
-write_tsv(train_final, 'train_final.tsv')
-print("Corrected train")
-write_tsv(test_final, 'test_final.tsv')
-print("Corrected test")
-write_tsv(eval_final, 'eval_final.tsv')
-print("Corrected eval")
-
 
 write_tsv(train_suggestions, 'train_suggestions.tsv')
 write_tsv(test_suggestions, 'test_suggestions.tsv')
