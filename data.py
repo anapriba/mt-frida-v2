@@ -144,13 +144,26 @@ def apply_marked_suggestions(suggestions):
     for i in range(len(suggestions)):
         row = suggestions[i]
 
-        if row[1] == 'True':
-            original_row[1] = issues_row[4] # if issue was detected, change the label value
-   
-        new_data_row = original_row
-        final.append(new_data_row)
+        new_row = []
+        new_row.append(row[0]) # text
+        if row[4] != "":
+           new_row.append(row[4]) # final label
+        else:
+           new_row.append(row[1])
+      
+
+        final.append(new_row)
     return final
 
+
+def read_suggestions(path): 
+  with open(path, 'r', encoding='cp1252') as f:
+      reader = csv.reader(f, delimiter='\t')
+      return apply_marked_suggestions(list(reader))
+
+eval_suggested = read_suggestions('projekt/mt/eval_suggested.txt')
+test_suggested = read_suggestions('projekt/mt/test_suggested.txt')
+train_suggested = read_suggestions('projekt/mt/test_suggested.txt')
 
 train_suggestions = generate_correction_data(train_data, train_issues)
 test_suggestions = generate_correction_data(test_data, test_issues)
@@ -168,3 +181,11 @@ def write_tsv(data, filename):
 write_tsv(train_suggestions, 'train_suggestions.tsv')
 write_tsv(test_suggestions, 'test_suggestions.tsv')
 write_tsv(eval_suggestions, 'eval_suggestions.tsv')
+
+eval_suggested = read_suggestions('projekt/mt/eval_suggested.txt')
+test_suggested = read_suggestions('projekt/mt/test_suggested.txt')
+train_suggested = read_suggestions('projekt/mt/train_suggested.txt')
+
+write_tsv(eval_suggested, 'eval_suggested_final.tsv')
+write_tsv(test_suggested, 'test_suggested_final.tsv')
+write_tsv(train_suggested, 'train_suggested_final.tsv')

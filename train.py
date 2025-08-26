@@ -41,7 +41,7 @@ def get_dataset(path):
             if i == 0:
                 i+=1
                 continue
-            
+
             data.append(row[0])
             labels.append(row[1])
             i+=1 
@@ -76,9 +76,9 @@ training_args = TrainingArguments(
     seed=10,
 )
 
-train_dataset = get_dataset('train_final.tsv')
-test_dataset = get_dataset('test_final.tsv')
-eval_dataset = get_dataset('eval_final.tsv')
+train_dataset = get_dataset('train_suggested_final.tsv')
+test_dataset = get_dataset('test_suggested_final.tsv')
+eval_dataset = get_dataset('eval_suggested_final.tsv')
 
 train_dataset = train_dataset.map(tokenize, batched=True)
 test_dataset = test_dataset.map(tokenize, batched=True)
